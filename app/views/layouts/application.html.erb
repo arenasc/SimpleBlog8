@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simpleblog8</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' %>
+  </head>
+  <body>
+    <header class="navbar navbar-default ">
+      <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+          <li class="nav-item">
+            <a class="nav-link active" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/posts/new" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">New</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+    <%= yield %>
+  </body>
+</html>
